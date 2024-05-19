@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu del Bar</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #333;
+            color: white;
+        }
+
+        header {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .header-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1200px;
+            padding: 20px;
+            background-color: #444;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin-top: -50px;
+            z-index: 1;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .menu-category {
+            margin-bottom: 30px;
+        }
+
+        .menu-category h2 {
+            background-color: #555;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .menu-category ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-category li {
+            background-color: #666;
+            margin: 5px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s;
+        }
+
+        .menu-category li:hover {
+            background-color: #777;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .header-image {
+                height: 200px;
+                object-fit: cover;
+            }
+
+            main {
+                width: 95%;
+                padding: 10px;
+                margin-top: -30px;
+            }
+
+            .menu-category h2 {
+                font-size: 1.2em;
+            }
+
+            .menu-category li {
+                font-size: 1em;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Bar Image" class="header-image">
+    </header>
+    <main>
+        <section id="menu">
+            <h1>Menu del Bar</h1>
+            <div class="menu-category">
+                <h2>Caffè</h2>
+                <ul>
+                    <li>Espresso</li>
+                    <li>Lungo</li>
+                    <li>Macchiato</li>
+                    <li>Cappuccino</li>
+                </ul>
+            </div>
+            <div class="menu-category">
+                <h2>Bevande</h2>
+                <ul>
+                    <li>Coca Cola</li>
+                    <li>Fanta</li>
+                    <li>Sprite</li>
+                    <li>Acqua</li>
+                </ul>
+            </div>
+            <div class="menu-category">
+                <h2>Gelateria</h2>
+                <ul>
+                    <li>Milk Shake</li>
+                    <li>Gelato Medio</li>
+                    <li>Gelato Grande</li>
+                    <li>Sorbetto</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script>
+       
